@@ -1,6 +1,6 @@
-=== Plugin Name ===
-Contributors: (this should be a list of wordpress.org userid's)
-Donate link: https://gabrielcastillo.net
+#=== Max Sher Snippets ===
+
+Author link: https://gabrielcastillo.net
 Requires at least: 5.0
 Tested up to: 5.0
 Stable tag: 5.0

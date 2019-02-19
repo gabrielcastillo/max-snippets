@@ -1,0 +1,22 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+ /* Style the buttons that are used to open and close the accordion panel */
+
+.mss_snippets {
+    width:100%;
+}
+
+.mss_snippet_wrapper {
+    padding:10px 0;
+}
+
+.mss_snippets li {
+    border-bottom:1px solid #efefef;
+}
+
+.mss_snippets li:last {
+    border-bottom:0;
+}

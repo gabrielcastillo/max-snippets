@@ -15,7 +15,7 @@
  * @wordpress-plugin
  * Plugin Name:       Max Sher Snippets
  * Plugin URI:        https://gabrielcastillo.net/
- * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
+ * Description:       Create and display snippets within a widget or shortcode. Shortcode: "[max_sher_snippets]"
  * Version:           1.0.0
  * Author:            Gabriel Castillo
  * Author URI:        https://gabrielcastillo.net

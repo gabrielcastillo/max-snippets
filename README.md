@@ -1,4 +1,4 @@
-#Max Sher Snippets
+# Max Sher Snippets
 
 Author link: https://gabrielcastillo.net
 Requires at least: 5.0

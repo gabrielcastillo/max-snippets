@@ -132,9 +132,9 @@ class Max_Sher_Snippets_Public {
 			$html .= '<li class="mss_snippet_wrapper">';
 				$html .= '<span class="side-list-cat">'.stripslashes($record['snippet_title']).'</span>';
 				$html .= '<div class="mss_snippet_excerpt">'.stripslashes($record['snippet_excerpt']).'</div>';
-				$html .= '<div class="mss_snippet_full" style="display:none;">' . stripslashes($record['snippet_text']) . '</div>';
+				$html .= '<div class="mss_snippet_full" style="display:none;">' . stripslashes(nl2br($record['snippet_text'])) . '</div>';
 				$html .= '<a class="mss_snippet_btn" href="#">Read More</a>';
-			$html .= '</lu>';
+			$html .= '</li>';
 		}
 		$html .= '</ul>';
 

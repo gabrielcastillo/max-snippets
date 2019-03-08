@@ -167,8 +167,8 @@ class Max_Sher_Snippets_Admin {
 				wp_redirect(add_query_arg(array('error' => 'text'), $redirect));
 				die();
 			}
-			$snippet_title = sanitize_text_field($_POST['snippet_title']);
-			$snippet_text = sanitize_text_field($_POST['snippet_text']);
+			$snippet_title = $_POST['snippet_title'];
+			$snippet_text = $_POST['snippet_text'];
 
 			delete_transient('mss_form_data_' . $user_id);
 
@@ -219,7 +219,7 @@ class Max_Sher_Snippets_Admin {
 			}
 
 			$snippet_title = sanitize_text_field($_POST['snippet_title']);
-			$snippet_text = sanitize_text_field($_POST['snippet_text']);
+			$snippet_text = $_POST['snippet_text'];
 			$snippet_id = filter_input(INPUT_POST, 'snippet_id', FILTER_SANITIZE_NUMBER_INT);
 			delete_transient('mss_form_data_' . $user_id);
 
@@ -260,15 +260,6 @@ class Max_Sher_Snippets_Admin {
 		if ( isset($_GET['snippet']) && is_numeric($_GET['snippet']) ) {
 			$id = $_GET['snippet'];
 		}
-
-		// if ( $action === 'delete' ) {
-		// 	$this->delete_snippet($_GET['snippet']);
-		// 	ob_start();
-		// 	header('Location: http://'. $_SERVER['HTTP_HOST'] . 'admin.php?page=max-sher-snippets');
-		// 	ob_clean();
-		// 	exit;
-			
-		// }
 
 		if ( $action === 'edit' ) {
 			require plugin_dir_path( dirname(__FILE__) ) . 'admin/partials/max-sher-snippets-edit.php';

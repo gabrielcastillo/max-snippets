@@ -34,10 +34,11 @@ class Max_Sher_Snippets_Activator {
 	public static function activate() {
 		$current_db_version = get_option('max_sher_snippet_db_version');
 
+		//Check if plugin has been activated before.
 		if ( ! $current_db_version ) {
 			$current_db_version = 0;
 		}
-
+		
 		if ( intval($current_db_version) < Max_Sher_Snippets_Activator::$db_version ) {
 			if ( Max_Sher_Snippets_Activator::create_or_upgrade_db() ) {
 				update_option('max_sher_snippet_db_version', Max_Sher_Snippets_Activator::$db_version);

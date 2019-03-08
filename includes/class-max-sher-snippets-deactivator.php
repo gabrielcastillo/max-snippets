@@ -30,7 +30,7 @@ class Max_Sher_Snippets_Deactivator {
 	 * @since    1.0.0
 	 */
 	public static function deactivate() {
-		update_option('max_sher_snippet_db_version', 0);
+		
 	}
 
 }

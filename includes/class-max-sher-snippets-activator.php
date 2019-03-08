@@ -45,7 +45,7 @@ class Max_Sher_Snippets_Activator {
 		}
 	}
 
-	public function create_or_upgrade_db()
+	public static function create_or_upgrade_db()
 	{
 		global $wpdb;
 

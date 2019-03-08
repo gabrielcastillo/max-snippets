@@ -134,7 +134,7 @@ class Max_Sher_Snippets_Public {
 				$html .= '<div class="mss_snippet_excerpt">'.stripslashes($record['snippet_excerpt']).'</div>';
 				$html .= '<div class="mss_snippet_full" style="display:none;">' . stripslashes(nl2br($record['snippet_text'])) . '</div>';
 				$html .= '<a class="mss_snippet_btn" href="#">Read More</a>';
-			$html .= '</lu>';
+			$html .= '</li>';
 		}
 		$html .= '</ul>';
 
